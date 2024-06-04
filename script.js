@@ -209,11 +209,11 @@ const students = [
         <tr>
           <th>ID</th>
           <th>Name</th>
-          <th>Email</th>
+          <th>Gender</th>
+          <th>Class</th>
           <th>Marks</th>
           <th>Passing</th>
-          <th>Class</th>
-          <th>Gender</th>
+          <th>Email</th>
         </tr>
       </thead>
       <tbody>
@@ -221,11 +221,11 @@ const students = [
           <tr>
             <td>${student.id}</td>
             <td class="flex-container"><img src="${student.img_src}" alt="${student.first_name} ${student.last_name}">${student.first_name} ${student.last_name}</td>
-            <td>${student.email}</td>
+            <td>${student.gender}</td>
+            <td>${student.class}</td>
             <td>${student.marks}</td>
             <td>${student.passing ? 'Passing' : 'Failed'}</td>
-            <td>${student.class}</td>
-            <td>${student.gender}</td>
+            <td>${student.email}</td>
           </tr>
         `).join('')}
       </tbody>
